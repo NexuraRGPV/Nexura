@@ -1,38 +1,101 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  background: radial-gradient(circle at top, #0a0016, #000000);
+  position: relative;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+/* Glowing circles */
+.glow-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(160px); /* 🔥 extra blur for softer glow */
+  opacity: 0.6;
+  z-index: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circle1 {
+  width: 600px;   /* 🔹 bigger */
+  height: 600px;
+  background: rgba(139, 34, 184, 1);
+  top: 100px;
+  left: -150px;
 }
+
+.circle2 {
+  width: 500px;   /* 🔹 bigger */
+  height: 500px;
+  background: rgba(139, 34, 184, 1);
+  bottom: -50px;
+  right: -200px;
+}
+
+.circle3 {
+  width: 550px;   /* 🔹 bigger */
+  height: 550px;
+  background:rgba(139, 34, 184, 1);
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Extra Circles */
+.circle4 {
+  width: 400px;
+  height: 400px;
+  background: rgba(139, 34, 184, 1);
+  top: 20%;
+  left: 70%;
+}
+html {
+  scroll-behavior: smooth;
+}
+.circle5 {
+  width: 350px;
+  height: 350px;
+  background: rgba(139, 34, 184, 1);
+  bottom: 15%;
+  left: 10%;
+}
+
+.circle6 {
+  width: 450px;
+  height: 450px;
+  background: rgba(139, 34, 184, 1);
+  top: 65%;
+  right: 15%;
+}
+
+.circle7 {
+  width: 500px;
+  height: 500px;
+  background: rgba(139, 34, 184, 1);
+  top: -200px;
+  right: 30%;
+}
+
+.circle8 {
+  width: 300px;
+  height: 300px;
+  background: rgba(139, 34, 184, 1);
+  bottom: 30%;
+  left: 40%;
+}
+
+.circle9 {
+  width: 380px;
+  height: 380px;
+  background: rgba(139, 34, 184, 1);
+  top: 40%;
+  right: -100px;
+}
+
+.circle10 {
+  width: 420px;
+  height: 420px;
+  background: rgba(139, 34, 184, 1);
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+

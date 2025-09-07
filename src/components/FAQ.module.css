@@ -1,0 +1,149 @@
+/* FAQ.module.css */
+
+/* Background and layout */
+.container {
+    font-family: Arial, sans-serif;
+    /* FIX: Added a dark gradient background for better text visibility */
+    
+    min-height: 100vh;
+    text-align: center;
+    width: 100%; /* Changed from 100vw to avoid horizontal scrollbar */
+    margin: 0;
+    padding: 2rem 1rem; /* Added some padding */
+    color: white;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/* Header style */
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 3em;
+    /* FIX: Added text shadow to make the header pop */
+    text-shadow: 0 0 15px rgba(224, 170, 255, 0.6);
+}
+
+.header p {
+    margin-top: 3px;
+    font-size: 1.5em;
+    color: #e0aaff;
+}
+
+/* Illustration image styling */
+.illustration img {
+    width: 100%;
+    max-width: 500px; /* Slightly reduced max-width */
+    height: auto;
+    margin: 0 auto 2rem auto;
+}
+
+/* FAQ section container */
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* FIX: Changed animation to a more compatible time-based one */
+    animation: sectionAnimation 0.8s ease-out forwards;
+}
+
+/* Each FAQ item */
+.faqItem {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 0;
+}
+
+.faqItem:last-child {
+    border-bottom: none;
+}
+
+/* FAQ question styling */
+.faqQuestion {
+    color: #e0aaff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 600; /* Made question slightly bolder */
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.faqQuestion:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Arrow styling for open/close state */
+.arrow {
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: transform 0.3s ease; /* Added transition for arrow rotation */
+}
+
+.arrow.open {
+    transform: rotate(45deg); /* Rotate arrow when open */
+    color: #fff;
+}
+
+/* FAQ answer styling */
+.faqAnswerWrapper {
+    /* FIX: Added a wrapper for smooth open/close animation */
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.faqAnswerWrapper.open {
+    max-height: 300px; /* Set a max-height large enough for content */
+    opacity: 1;
+    padding-top: 15px; /* Add padding when open */
+}
+
+.faqAnswer {
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #d1d1d1; /* Slightly softer white for the answer */
+}
+
+/* Keyframe animation (simpler and more compatible) */
+@keyframes sectionAnimation {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .header h1 {
+        font-size: 2.2em;
+    }
+
+    .header p {
+        font-size: 1.2em;
+    }
+
+    .faqQuestion {
+        font-size: 1em;
+    }
+
+    .faqAnswer {
+        font-size: 0.9em;
+    }
+}
