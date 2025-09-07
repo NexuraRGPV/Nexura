@@ -12,7 +12,7 @@
   border-radius: 50%;
   filter: blur(160px); /* 🔥 extra blur for softer glow */
   opacity: 0.6;
-  z-index: 0;
+  
 }
 
 .circle1 {
