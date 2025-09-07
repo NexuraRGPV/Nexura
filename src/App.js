@@ -72,6 +72,7 @@ function App() {
           path="/"
           element={
             <div className="App">
+              <Navbar />
               <div className="glow-circle circle1"></div>
               <div className="glow-circle circle2"></div>
               <div className="glow-circle circle3"></div>
@@ -84,7 +85,7 @@ function App() {
               <div className="glow-circle circle10"></div>
 
               {/* Har component ko ek section class do */}
-              <div className="section"><Navbar /></div>
+              
               <div className="section"><Hero /></div>
               <div className="section"><Domains /></div>
               <div className="section"><UpcomingEvents /></div>
