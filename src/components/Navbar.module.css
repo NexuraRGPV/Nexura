@@ -1,39 +1,31 @@
 .navbar {
   display: flex;
-  justify-content: space-between;  /* Logo left, links right */
+  justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 0.7rem;
+  padding: 0.7rem 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
-  
-
+   /* optional dark background */
 }
 
 /* Logo */
 .logo img {
   width: 150px;
-height: auto;
-top: 12.64px;
-left: 42.6px;
-
-angle: -179.69 deg;
-opacity: 1;
-
+  height: auto;
 }
 
-/* Nav links */
+/* Nav Links */
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 8rem;   /* space between links */
+  gap: 2rem;
   margin: 0;
-  padding: 0px 50px;
-  
+  padding: 0;
 }
 
 .navLinks li a {
-  color: #cbb7ff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
@@ -43,4 +35,42 @@ opacity: 1;
 .active {
   color: #ffffff;
   text-shadow: 0 0 8px #b26bff;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #cbb7ff;
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 70px; /* height of navbar */
+    right: 0;
+    
+    flex-direction: column;
+    width: 200px;
+    gap: 1rem;
+    padding: 1rem;
+    display: none;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
 }
