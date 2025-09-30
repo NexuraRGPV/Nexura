@@ -8,19 +8,19 @@ const Coordinators = () => {
             image: "/people/mr. aditya_pratap_singh.jpeg",
             name: "Mr. Aditya Pratap Singh",
             position: "Assistant Professor of Department of Automobile Engineering | Faculty Coordinator of Nexura",
-            description: "Test description"
+            description: ""
         },
         {
             image: "/people/alka bani maam.jpeg",
             name: "Dr. Alka Bani Agrawal",
             position: "Head of Department of Automobile Engineering chief Patron | Head of Nexura",
-            description: "Test description"
+            description: ""
         },
         {
             image: "/people/mr. vikas verma.jpeg",
             name: "Mr. Vikas Verma",
             position: "Assistant Professor at Department of Automobile Engineering | Faculty Coordinator of Nexura",
-            description: "Test description"
+            description: ""
         },
     ];
 

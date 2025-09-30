@@ -96,6 +96,9 @@
   }
 
   .slideshow {
-    height: 120px;
+    height: 220px;
+  }
+  .image{
+    width: 60%;
   }
 }

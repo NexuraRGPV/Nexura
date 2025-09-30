@@ -77,7 +77,7 @@ const Hero = () => {
         {/* Right - Heading + Text */}
         <div className="hero-right">
           <h1 className="hero-title">WELCOME TO NEXURA!</h1>
-          <p>
+          <p >
             Nexura is a student-led club under the Department of Automobile
             Engineering at UIT-RGPV, Bhopal, dedicated to nurturing talent and
             fostering interdisciplinary collaboration. We equip students with

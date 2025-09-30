@@ -132,8 +132,8 @@ const CustomScrollbarUI = () => {
             🧠
             {showTooltip && (
               <div className={styles.tooltip}>
-                Light Mode is being <br />
-                painted right now!
+                Things are loading... <br />
+                please wait!
               </div>
             )}
           </div>

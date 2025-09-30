@@ -36,7 +36,7 @@ const DropDown = () => {
       image1: ishika,
       name1: "Ishika Purohit",
       image2: "",
-      name2: "Your Spot?",
+      name2: "",
     },
     
   ]
